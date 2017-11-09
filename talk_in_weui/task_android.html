@@ -1,56 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>talk in weui</title>
+  <title>页面</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
   <link rel="stylesheet" href="./css/weui.min.css">
   <style>
-  * {
-    margin: 0;
-    padding: 0;
-  }
+    * {
+      margin: 0;
+      padding: 0;
+    }
 
-  html, body {
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-  }
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      overflow-x: hidden;
+    }
 
-  body {
-    line-height: 1.6;
-    font-family: -apple-system-font, "Helvetica Neue", sans-serif;
-    background-color: #fbf9fe;
-  }
+    body {
+      line-height: 1.6;
+      font-family: -apple-system-font, "Helvetica Neue", sans-serif;
+      background-color: #fbf9fe;
+    }
 
-  .center {
-    text-align: center;
-  }
+    .center {
+      text-align: center;
+      font-size: 80px;
+    }
 
-  .logo {
-    width: 60px;
-    height: 60px;
-  }
+    .logo {
+      width: 60px;
+      height: 60px;
+    }
 
-  .vue-version {
+    .vue-version {
+      font-size: 20px;
+      text-align: center;
+    }
+    .titletext {
+    font-size:15px;
+    font-weight: bold;
+  }
+  .text{
     font-size: 12px;
-    color: #cccccc;
   }
-  /* 空格后代选择 
+
+    /* 空格后代选择 
   >子元素选择器 */
-  .weui-cell__hd>img {
-    display: block;
-    margin-right: 5px;
-    width: 20px;
-  }
-  
+
+    .weui-cell__hd>img {
+      display: block;
+      margin-right: 5px;
+      width: 40px;
+
+      background-color: black;
+    }
   </style>
 </head>
+
 <body ontouchstart>
   <!-- 单页应用 -->
   <div style="height:100%">
-	</div>
+    <div class="center">16:10</div>
+    <div class="vue-version">11月6日 星期一</div>
+
+    <div class="weui-cells">
+      <a href="#" class="weui-cell weui-cell_access">
+        <div class="weui-cell__hd">
+          <img src="./images/t018b1b28847ed8588f.webp.jpg" alt="">
+        </div>
+        <div class="weui-cell__bd">
+          <span><p class="titletxet">中国火箭发射成本1公斤1万美</p></span>
+        <span><p class="text">为何却敢报价5000美元</p></span>
+        </div>
+        <div class="weui-cell__ft">15:42
+          </div>
+      </a>
+      <a href="#" class="weui-cell weui-cell_access">
+          <div class="weui-cell__hd">
+            <img src="./images/t01465e54cb812cf7a7.webp.jpg">
+          </div>
+          <div class="weui-cell__bd">
+            <span><p class="titletxet">前端招聘+求职 【不闲聊】</p></span>
+          <span><p class="text">招人-三桥sankyu：要是base HK 就不错啊</p></span>
+          </div>
+          <div class="weui-cell__ft">15:36</div>
+        </a>
+        <a href="#" class="weui-cell weui-cell_access">
+            <div class="weui-cell__hd">
+              <img src="./images/t01c1a8acaf72aeed45.webp.jpg">
+            </div>
+            <div class="weui-cell__bd">
+              <span><p class="titletxet">交易提醒</p></span>
+            <span><p class="text">你有一笔16.00元的支出，点此查看详情</p></span>
+            </div>
+            <div class="weui-cell__ft">11:50</div>
+          </a>
+          <a href="#" class="weui-cell weui-cell_access">
+              <div class="weui-cell__hd">
+                <img src="./images/t01b00592ece6c9d540.webp.jpg">
+              </div>
+              <div class="weui-cell__bd">
+                <span><p class="titletxet">为了它，近百名飞行员集结西部</p></span>
+              <span><p class="text">目前近百名飞行员正集结我国西部，现役装...</p></span>
+              </div>
+              <div class="weui-cell__ft">16:08</div>
+            </a>
+    </div>
+    <div class="weui-tabbar" style="background-color:#cccccc">
+      <a href="" class="weui-tabbar__item">
+        <span style="position:relative;display:inline-block;">
+            <img src="./images/t0159689d7120837cfb.png" alt="" class="weui-tabbar__icon">
+        </span>
+      </a>
+    </div>
+
+
+
+  </div>
 </body>
+
 </html>
