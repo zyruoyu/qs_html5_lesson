@@ -1,0 +1,22 @@
+* {
+    /* 用户选中 */
+    -webkit-user-select: none;
+    user-select: none;
+}
+#loading {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin-left: -.866667rem;
+    margin-right: -1.46667rem;
+    z-index: 9999;
+}
+#loading,#loading .loading {
+    width: 1.73333rem;
+    height: 1.73333rem;
+
+}
+#loading .loading {
+    background: url(http://gw.alicdn.com/tfs/TB1ZoYwbMvD8KJjy0FlXXagBFXa-130-130.gif ) no-repeat 50%;
+    background-size: 100% 100%;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>页面</title>
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js "></script>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html,body{
+        height: 100%;
+        width: 100%;
+        background-color: gray;
+    }
+    a {
+        text-decoration: none;
+        color: #123;
+    }
+
+.page__hd-items{
+        text-align: center;
+        line-height: 3.5rem;
+        font-size: .5rem;
+        color: white;
+        
+    }
+    .page__hd{
+        width: 100%;
+        height:3.5rem;
+        background-color: green;
+    }
+    .page__bd{
+        height: 12rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sp_items{
+        width: 6.8148rem;
+        height: 6.8148rem;
+        /* background-color: red; */
+        margin: 0 auto;
+    }
+    .sp_items_item{
+        width: 1.48148rem;
+        height: 1.48148rem;
+        float: left;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    .sp_items_item a {
+        color: white;
+        font-size:20px;
+        line-height: 1.48148rem;
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 50%;
+        text-align: center;
+        border:.02rem solid white;
+        
+    }
+    .sp_items_item:nth-child(3n) {
+        margin-right:0;
+    }
+    .sp_items_last{
+        margin-left: 2.5rem;
+    }
+    .sp_btn_wapper{
+        position: absolute;
+    }
+    .left{
+
+    }
+
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="page__hd">
+            <div class="page__hd-items">输入密码</div>
+        </div>
+        <div class="page__bd">
+            <ul class="sp_items">
+                <li class="sp_items_item"><a href="" class="round_btn">1</a></li>
+                <li class="sp_items_item"><a href="" class="round_btn">1</a></li>
+                <li class="sp_items_item"><a href="" class="round_btn">1</a></li>
+                <li class="sp_items_item"><a href="" class="round_btn">1</a></li>
+                <li class="sp_items_item"><a href="" class="round_btn">1</a></li>
+                <li class="sp_items_item"><a href="" class="round_btn">1</a></li>
+                <li class="sp_items_item"><a href="" class="round_btn">1</a></li>
+                <li class="sp_items_item"><a href="" class="round_btn">1</a></li>
+                <li class="sp_items_item"><a href="" class="round_btn">1</a></li>
+                <li class="sp_items_item sp_items_last"><a href="" class="round_btn">10</a></li>
+            </ul>
+        </div>
+        <div class="page__ft">
+            <div class="sp_btn_wapper">
+                <a href="" class="btn btn-default left">紧急呼叫</a>
+                <a href="" class="btn btn-default right">取消</a>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>
