@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <style>
+    .grid{
+        display: grid;
+        /* 九宫格制定了大小
+        同时指定行与列
+        平面布局的形象理解
+        /* 行列相交 cell fr fraction 分数*/
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        grid-template-columns: repeat(3,3.33333rem);
+        grid-template-rows:repeat(3,200px); 
+        /* grid-gap: 20px; */
+        /* -ms-layout-grid-line: auto ,3px; */
+    }
+    /* .grid div:nth-child(2n){
+        background-color: green;
+    }
+    .grid div:nth-child(2n+1){
+        background-color: gray;
+    } */
+    .frist{
+        display: flex;
+        flex-direction:column ;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+    }
+    .grid img{
+        width: 40px;
+        height: 40px;
+    }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="frist">
+            <img src="./images/信用卡还款.png"/>信用卡还款
+        </div>
+        <div class="frist">
+                <img src="./images/信用卡还款.png"/>信用卡还款</div>
+        <div class="frist">
+                <img src="./images/信用卡还款.png"/>信用卡还款</div>
+        <div class="frist">
+                <img src="./images/信用卡还款.png"/>信用卡还款</div>
+        <div class="frist">
+                <img src="./images/信用卡还款.png"/>信用卡还款</div>
+        <div class="frist">
+                <img src="./images/信用卡还款.png"/>信用卡还款</div>
+        <div class="frist">
+                <img src="./images/信用卡还款.png"/>信用卡还款</div>
+        <div class="frist">
+                <img src="./images/信用卡还款.png"/>信用卡还款</div>
+    </div>
+</body>
+</html>
