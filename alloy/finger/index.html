@@ -45,9 +45,13 @@
     <div class="head">AlloyFinger</div>
     <div class="example">
         gesture
-        <div class="title">pinch</div>
+        <div class="title">pinchfdas</div>
         <div class="imgBox">
             <img src="./asset/test.png" alt="" id="pinchImg">
+        </div>
+        <div class="title">rotate</div>
+        <div class="imgBox">
+            <img src="./asset/test.png" alt="" id="rotateImg">
         </div>
     </div>
     <!-- gesture 很复杂， 由 ontouchstart ontouchmove ontouchend event 构成 -->
@@ -63,6 +67,13 @@
                 console.log("tab一下");
                 // evt 能提供放大缩小的比例
                 pinchImg.scaleX = pinchImg.scaleY = initScale*evt.zoom;
+            }
+        })
+        var rotate = document.getElementById('rotateImg');
+        Transform(rotate);
+        new AlloyFinger(rotateImg,{
+            rotate: function(evt){
+                rotateImg.rotateZ +=evt.angle;
             }
         })
     </script>
